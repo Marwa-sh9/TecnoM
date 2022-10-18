@@ -1,0 +1,60 @@
+     /*-- body --*/
+body{
+    background-color:#262a2c;
+}
+#DIV{
+  padding-top: 6%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.700),rgba(187, 175, 255, 0.5));
+} 
+#Bu{
+  width: 150px;
+  height: 45px;
+  margin: 0em 34em 6em 34em;
+}
+#Bu:hover {
+     background-color: rgb(225, 0, 0);
+     color:black;
+  }
+h1{
+      color: honeydew;
+      text-align: center;
+      margin: 2em 0em 3em 0em;
+  }
+#add{
+    width: 35em;
+    float: left;
+    margin-left: 6%;
+    border-radius: 10px;
+}
+#sub{
+    width: 35em;
+    float: right;
+    margin-right: 8%;
+}
+#post{
+    width: 35em;
+    float: left;
+    margin-left: 6%;
+    margin-top: 8em;
+}
+#sect{
+    width: 35em;
+    float: right;
+    margin-right: 8%;
+    margin-top: 8em;
+}
+.btn{
+  width: 150px;
+  height: 45px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-radius: 10px;
+}
+.btn:hover{
+  color:black;
+  transition: 0.5s;
+}
+html{
+  margin-bottom: 15%;
+}

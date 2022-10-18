@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<students>
+  <studen>
+    <name>Marwa al3sh</name>
+    <mail>MarwaAl3sh1@StdTcc.com</mail>
+    <password>m123</password>
+
+  </studen>
+
+  <studen>
+    <name>Baraah jarkas</name>
+    <mail>Baraahjarkas2@StdTcc.com</mail>
+    <password>b123</password>
+
+  </studen>
+
+  <studen>
+    <name>Boshra Zakor</name>
+    <mail>BoshraZakor3@StdTcc.com</mail>
+    <password>b1233</password>
+
+
+  </studen>
+
+  <studen>
+    <name>Alaa Qostanteny </name>
+    <mail>AlaaQostanteny4@StdTcc.com</mail>
+    <password>A123</password>
+
+
+  </studen>
+
+  <studen>
+    <name>Ayman Aswad</name>
+    <mail>AymanAswad5@StdTcc.com</mail>
+    <password>A1233</password>
+
+
+
+  </studen>
+
+</students>
+

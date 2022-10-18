@@ -1,0 +1,481 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.Net.Compilers.3.6.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.3.6.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.3.8.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.3.8.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{11971465-970E-4943-B1AB-D7248488B579}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_12_12sun</RootNamespace>
+    <AssemblyName>12_12sun</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=3.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Add Postes.aspx" />
+    <Content Include="add_std.aspx" />
+    <Content Include="Admin_panel.aspx" />
+    <Content Include="bin\12_12sun.dll" />
+    <Content Include="bin\12_12sun.pdb" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="bin\roslyn\csc.exe" />
+    <Content Include="bin\roslyn\csi.exe" />
+    <Content Include="bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="bin\roslyn\System.AppContext.dll" />
+    <Content Include="bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.StackTrace.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="bin\roslyn\vbc.exe" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="Depts_update.aspx" />
+    <Content Include="design\Add post\css\blog-post.css" />
+    <Content Include="design\Add post\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="design\Add post\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="design\Add post\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="design\Add post\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="design\Add post\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="design\Add post\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="design\Add post\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="design\Add post\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="design\Add post\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="design\Add post\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="design\Add post\vendor\jquery\jquery.js" />
+    <Content Include="design\Add post\vendor\jquery\jquery.min.js" />
+    <Content Include="design\Add post\vendor\jquery\jquery.slim.js" />
+    <Content Include="design\Add post\vendor\jquery\jquery.slim.min.js" />
+    <Content Include="design\addstd\Content\bootstrap-theme.css" />
+    <Content Include="design\addstd\Content\bootstrap-theme.css.map" />
+    <Content Include="design\addstd\Content\bootstrap-theme.min.css" />
+    <Content Include="design\addstd\Content\bootstrap-theme.min.css.map" />
+    <Content Include="design\addstd\Content\bootstrap.css" />
+    <Content Include="design\addstd\Content\bootstrap.css.map" />
+    <Content Include="design\addstd\Content\bootstrap.min.css" />
+    <Content Include="design\addstd\Content\bootstrap.min.css.map" />
+    <Content Include="design\addstd\Content\Site.css" />
+    <Content Include="design\addstd\css\bootstrap.min.css" />
+    <Content Include="design\addstd\css\bootstrap.min.css.map" />
+    <Content Include="design\addstd\css\style.css" />
+    <Content Include="design\addstd\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="design\addstd\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="design\addstd\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="design\addstd\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="design\addstd\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="design\addstd\img\back3.jpg" />
+    <Content Include="design\addstd\img\back6.jpg" />
+    <Content Include="design\Admin panel\Content\bootstrap-theme.css" />
+    <Content Include="design\Admin panel\Content\bootstrap-theme.min.css" />
+    <Content Include="design\Admin panel\Content\bootstrap.css" />
+    <Content Include="design\Admin panel\Content\bootstrap.min.css" />
+    <Content Include="design\Admin panel\Content\Site.css" />
+    <Content Include="design\Admin panel\Css\bootstrap.css" />
+    <Content Include="design\Admin panel\Css\x.css" />
+    <Content Include="design\Admin panel\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="design\Admin panel\img\AddPost.png" />
+    <Content Include="design\Admin panel\img\AddSection.png" />
+    <Content Include="design\Admin panel\img\AddStudent.png" />
+    <Content Include="design\Admin panel\img\AddSubject.png" />
+    <Content Include="design\defualt\Css\bootstrap-grid.css" />
+    <Content Include="design\defualt\Css\bootstrap-grid.min.css" />
+    <Content Include="design\defualt\Css\bootstrap-reboot.css" />
+    <Content Include="design\defualt\Css\bootstrap-reboot.min.css" />
+    <Content Include="design\defualt\Css\bootstrap.css" />
+    <Content Include="design\defualt\Css\bootstrap.min.css" />
+    <Content Include="design\defualt\Css\style1.css" />
+    <Content Include="design\defualt\font5\all.js" />
+    <Content Include="design\defualt\font\all.css" />
+    <Content Include="design\defualt\font\all.js" />
+    <Content Include="design\defualt\font\all.min.css" />
+    <Content Include="design\defualt\font\all.min.js" />
+    <Content Include="design\defualt\font\brands.css" />
+    <Content Include="design\defualt\font\brands.js" />
+    <Content Include="design\defualt\font\brands.min.css" />
+    <Content Include="design\defualt\font\brands.min.js" />
+    <Content Include="design\defualt\font\conflict-detection.js" />
+    <Content Include="design\defualt\font\conflict-detection.min.js" />
+    <Content Include="design\defualt\font\font-awesome.css" />
+    <Content Include="design\defualt\font\font-awesome.min.css" />
+    <Content Include="design\defualt\font\fontawesome.css" />
+    <Content Include="design\defualt\font\fontawesome.js" />
+    <Content Include="design\defualt\font\fontawesome.min.css" />
+    <Content Include="design\defualt\font\fontawesome.min.js" />
+    <Content Include="design\defualt\font\regular.css" />
+    <Content Include="design\defualt\font\regular.js" />
+    <Content Include="design\defualt\font\regular.min.css" />
+    <Content Include="design\defualt\font\regular.min.js" />
+    <Content Include="design\defualt\font\solid.css" />
+    <Content Include="design\defualt\font\solid.js" />
+    <Content Include="design\defualt\font\solid.min.css" />
+    <Content Include="design\defualt\font\solid.min.js" />
+    <Content Include="design\defualt\font\svg-with-js.css" />
+    <Content Include="design\defualt\font\svg-with-js.min.css" />
+    <Content Include="design\defualt\font\v4-shims.css" />
+    <Content Include="design\defualt\font\v4-shims.js" />
+    <Content Include="design\defualt\font\v4-shims.min.css" />
+    <Content Include="design\defualt\font\v4-shims.min.js" />
+    <Content Include="design\defualt\Image\backgraund.jpg" />
+    <Content Include="design\defualt\Image\comp.jpg" />
+    <Content Include="design\defualt\Image\IMG_20201211_202307_912.jpg" />
+    <Content Include="design\defualt\Image\man.png" />
+    <Content Include="design\defualt\Image\network.jpg" />
+    <Content Include="design\defualt\Image\s.png" />
+    <Content Include="design\defualt\Image\stud.jpg" />
+    <Content Include="design\defualt\Image\stud1.jpg" />
+    <Content Include="design\defualt\Image\stud10.jpg" />
+    <Content Include="design\defualt\Image\stud11.jpg" />
+    <Content Include="design\defualt\Image\stud2.jpg" />
+    <Content Include="design\defualt\Image\stud3.jpg" />
+    <Content Include="design\defualt\Image\stud4.jpg" />
+    <Content Include="design\defualt\Image\stud5.jpg" />
+    <Content Include="design\defualt\Image\stud8.jpg" />
+    <Content Include="design\defualt\Image\stud9.jpg" />
+    <Content Include="design\defualt\Image\wel2.jpg" />
+    <Content Include="design\defualt\Image\wel3.jpg" />
+    <Content Include="design\defualt\Image\well.jpg" />
+    <Content Include="design\defualt\Image\wman-man.png" />
+    <Content Include="design\defualt\Image\wman.png" />
+    <Content Include="design\defualt\w3\w3 %281%29.css" />
+    <Content Include="design\depts\css\bootstrap-grid.css" />
+    <Content Include="design\depts\css\bootstrap-grid.min.css" />
+    <Content Include="design\depts\css\bootstrap-reboot.css" />
+    <Content Include="design\depts\css\bootstrap-reboot.min.css" />
+    <Content Include="design\depts\css\bootstrap.css" />
+    <Content Include="design\depts\css\bootstrap.min.css" />
+    <Content Include="design\depts\img3.png" />
+    <Content Include="design\depts\js\bootstrap.bundle.js" />
+    <Content Include="design\depts\js\bootstrap.bundle.min.js" />
+    <Content Include="design\depts\js\bootstrap.js" />
+    <Content Include="design\depts\js\bootstrap.min.js" />
+    <Content Include="design\login\Content\bootstrap-theme.css" />
+    <Content Include="design\login\Content\bootstrap-theme.css.map" />
+    <Content Include="design\login\Content\bootstrap-theme.min.css" />
+    <Content Include="design\login\Content\bootstrap-theme.min.css.map" />
+    <Content Include="design\login\Content\bootstrap.css" />
+    <Content Include="design\login\Content\bootstrap.css.map" />
+    <Content Include="design\login\Content\bootstrap.min.css" />
+    <Content Include="design\login\Content\bootstrap.min.css.map" />
+    <Content Include="design\login\Content\Site.css" />
+    <Content Include="design\login\css\bootstrap-icons.css" />
+    <Content Include="design\login\css\bootstrap.css" />
+    <Content Include="design\login\css\Text.css" />
+    <Content Include="design\login\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="design\login\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="design\login\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="design\login\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="design\login\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="design\login\img\bg.jpg" />
+    <Content Include="design\Subject\b.css" />
+    <Content Include="design\Subject\Content\bootstrap.css" />
+    <Content Include="design\Subject\Content\bootstrap.min.css" />
+    <Content Include="design\Subject\Content\Site.css" />
+    <Content Include="design\Subject\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="design\Subject\img\img6.png" />
+    <Content Include="design\Subject\img\imgs.png" />
+    <Content Include="design\Subject\Scripts\ai.0.22.9-build00167.js" />
+    <Content Include="design\Subject\Scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="design\Subject\Scripts\bootstrap.js" />
+    <Content Include="design\Subject\Scripts\bootstrap.min.js" />
+    <Content Include="design\Add post\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="design\Add post\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="design\Add post\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="design\Add post\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="design\Add post\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="design\Add post\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="design\Add post\vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="design\Add post\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="design\Add post\vendor\bootstrap\js\bootstrap.js.map" />
+    <Content Include="design\Add post\vendor\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="design\Add post\vendor\jquery\jquery.min.map" />
+    <Content Include="design\Add post\vendor\jquery\jquery.slim.min.map" />
+    <None Include="design\Subject\Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="design\Subject\Scripts\jquery-1.10.2.js" />
+    <Content Include="design\Subject\Scripts\jquery-1.10.2.min.js" />
+    <Content Include="design\Subject\Scripts\modernizr-2.6.2.js" />
+    <Content Include="design\Subject\Scripts\respond.js" />
+    <Content Include="design\Subject\Scripts\respond.min.js" />
+    <Content Include="design\Subject\Scripts\WebForms\DetailsView.js" />
+    <Content Include="design\Subject\Scripts\WebForms\Focus.js" />
+    <Content Include="design\Subject\Scripts\WebForms\GridView.js" />
+    <Content Include="design\Subject\Scripts\WebForms\Menu.js" />
+    <Content Include="design\Subject\Scripts\WebForms\MenuStandards.js" />
+    <Content Include="design\Subject\Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="design\Subject\Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="design\Subject\Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="design\Subject\Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="design\Subject\Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="design\Subject\Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="design\Subject\Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="design\Subject\Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="design\Subject\Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="design\Subject\Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="design\Subject\Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="design\Subject\Scripts\WebForms\SmartNav.js" />
+    <Content Include="design\Subject\Scripts\WebForms\TreeView.js" />
+    <Content Include="design\Subject\Scripts\WebForms\WebForms.js" />
+    <Content Include="design\Subject\Scripts\WebForms\WebParts.js" />
+    <Content Include="design\Subject\Scripts\WebForms\WebUIValidation.js" />
+    <None Include="design\Subject\Scripts\_references.js" />
+    <Content Include="Edit_Student.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="bin\12_12sun.dll.config" />
+    <Content Include="bin\roslyn\csc.exe.config" />
+    <Content Include="bin\roslyn\csc.rsp" />
+    <Content Include="bin\roslyn\csi.rsp" />
+    <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="bin\roslyn\vbc.exe.config" />
+    <Content Include="bin\roslyn\vbc.rsp" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="design\Subject\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="design\Subject\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="design\Subject\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="design\depts\css\bootstrap-grid.css.map" />
+    <Content Include="design\depts\css\bootstrap-grid.min.css.map" />
+    <Content Include="design\depts\css\bootstrap-reboot.css.map" />
+    <Content Include="design\depts\css\bootstrap-reboot.min.css.map" />
+    <Content Include="design\depts\css\bootstrap.css.map" />
+    <Content Include="design\depts\css\bootstrap.min.css.map" />
+    <Content Include="design\depts\js\bootstrap.bundle.js.map" />
+    <Content Include="design\depts\js\bootstrap.bundle.min.js.map" />
+    <Content Include="design\depts\js\bootstrap.js.map" />
+    <Content Include="design\depts\js\bootstrap.min.js.map" />
+    <Content Include="design\Subject\Scripts\jquery-1.10.2.min.map" />
+    <None Include="Excel file\Book1.xlsx" />
+    <Content Include="design\Admin panel\Content\bootstrap-theme.css.map" />
+    <Content Include="design\Admin panel\Content\bootstrap-theme.min.css.map" />
+    <Content Include="design\Admin panel\Content\bootstrap.css.map" />
+    <Content Include="design\Admin panel\Content\bootstrap.min.css.map" />
+    <Content Include="design\Admin panel\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="design\Admin panel\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="design\Admin panel\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="design\Admin panel\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile2.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile3.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile4.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile5.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Default.aspx" />
+    <Content Include="Page_Student.aspx" />
+    <Content Include="Student Subjects.aspx" />
+    <Content Include="subjects.aspx" />
+    <Content Include="update depts.aspx" />
+    <Content Include="view.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add Postes.aspx.cs">
+      <DependentUpon>Add Postes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add Postes.aspx.designer.cs">
+      <DependentUpon>Add Postes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="add_std.aspx.cs">
+      <DependentUpon>add_std.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="add_std.aspx.designer.cs">
+      <DependentUpon>add_std.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_panel.aspx.cs">
+      <DependentUpon>Admin_panel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_panel.aspx.designer.cs">
+      <DependentUpon>Admin_panel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\DataAccessLayer.cs" />
+    <Compile Include="Depts_update.aspx.cs">
+      <DependentUpon>Depts_update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Depts_update.aspx.designer.cs">
+      <DependentUpon>Depts_update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_Student.aspx.cs">
+      <DependentUpon>Edit_Student.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Edit_Student.aspx.designer.cs">
+      <DependentUpon>Edit_Student.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page_Student.aspx.cs">
+      <DependentUpon>Page_Student.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page_Student.aspx.designer.cs">
+      <DependentUpon>Page_Student.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student Subjects.aspx.cs">
+      <DependentUpon>Student Subjects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student Subjects.aspx.designer.cs">
+      <DependentUpon>Student Subjects.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="subjects.aspx.cs">
+      <DependentUpon>subjects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="subjects.aspx.designer.cs">
+      <DependentUpon>subjects.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="update depts.aspx.cs">
+      <DependentUpon>update depts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="update depts.aspx.designer.cs">
+      <DependentUpon>update depts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view.aspx.cs">
+      <DependentUpon>view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view.aspx.designer.cs">
+      <DependentUpon>view.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="design\addstd\js\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54068</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54068/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.3.8.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.3.8.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.3.6.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.3.6.0\build\Microsoft.Net.Compilers.props'))" />
+  </Target>
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
